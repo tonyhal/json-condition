@@ -237,7 +237,7 @@ func ValueToFloat(v1 interface{}) (float64, error) {
 		// fmt.Println("float64")
 		return v1.(float64), nil
 	default:
-		fmt.Println("default")
+		// fmt.Println("default")
 		return 0, fmt.Errorf("value type parser error is not float, value:%v", v1)
 	}
 }
